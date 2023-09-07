@@ -8,3 +8,32 @@ mutation CreateInterviews($input: [InterviewCreateInput!]!) {
   }
 }
 
+# {
+#   "input": [
+#     {
+#       "description": null,
+#       "duration": null,
+#       "interviewer": {
+#         "connect": {
+#           "where": {
+#             "node": {
+#               "interviewerId": null
+#             }
+#           }
+#         }
+#       },
+#       "releventLinks": null,
+#       "timeEnd": null,
+#       "timeStart": null,
+#       "candidate": {
+#         "connect": {
+#           "where": {
+#             "node": {
+#               "candidateId": null
+#             }
+#           }
+#         }
+#       }
+#     }
+#   ]
+# }
