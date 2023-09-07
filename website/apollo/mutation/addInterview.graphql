@@ -1,0 +1,10 @@
+mutation CreateInterviews($input: [InterviewCreateInput!]!) {
+  createInterviews(input: $input) {
+    interviews {
+      interviewId
+      timeEnd
+      timeStart
+    }
+  }
+}
+
