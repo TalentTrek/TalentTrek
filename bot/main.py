@@ -98,7 +98,7 @@ def get_schedule(message):
 @bot.message_handler(["interviewer"])
 def get_interviewer_details(message):
     user_id = str(message.from_user.id)
-    # create the data object and fill it with response data from API
+    # create the data object and fill it with response data from the API
     api_url = 'http://localhost:3000/api/botUpdate?telegram_id=1433866671'
     response = requests.get(api_url)
     data = response.json()
